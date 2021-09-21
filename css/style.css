@@ -9,8 +9,6 @@
 
 :root{
   --primary-color: #fff;
-  /* --secundary-color: #e70059; */
-  /* --secundary-color: #0cb837cc; */
   --secundary-color: #06A77D;
   --text-color: #7c7c7c;
 }
@@ -265,23 +263,6 @@ img{
   box-shadow: 5px 5px 15px 0 #2222228e;
 }
 
-@media (max-width: 800px){
-  .price{
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .price .price-item:nth-child(3){
-    order: -2;
-  }
-
-  .price .price-item:nth-child(2){
-    order: -1;
-  }
-
-
-}
-
 .quality{
   max-width: 960px;
   margin: 60px auto;
@@ -388,12 +369,6 @@ img{
   padding: 15px 10px;
 }
 
-@media (max-width: 600px){
-  .newsletter form button{
-    font-size: 1.5rem;
-  }
-}
-
 /* Footer */
 .footer{
   display: flex;
@@ -425,7 +400,34 @@ img{
   font-size: 20px;
 }
 
-@media (max-width: 768px) {
+/* Media Queries */
+
+@media (max-width: 360px){
+  .intro br{
+    display: none;
+  }
+}
+
+@media (max-width: 600px){
+  .newsletter form button{
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 800px){
+  .price{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .price .price-item:nth-child(3){
+    order: -2;
+  }
+
+  .price .price-item:nth-child(2){
+    order: -1;
+  }
+
   .menu-btn{
     display: block;
   }
@@ -433,11 +435,5 @@ img{
   .menu-nav{
     display: none;
   }
-}
-
-@media (max-width: 360px){
-  .intro br{
-    display: none;
-}
 }
 
