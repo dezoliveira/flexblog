@@ -98,7 +98,7 @@ img{
 
 .about-info h1{
   font-size: 3em;
-  margin: .5em;
+  margin: 0 0 40px 0;
 }
 
 .about-info p{
@@ -278,6 +278,8 @@ img{
   .price .price-item:nth-child(2){
     order: -1;
   }
+
+
 }
 
 .quality{
@@ -431,5 +433,11 @@ img{
   .menu-nav{
     display: none;
   }
+}
+
+@media (max-width: 360px){
+  .intro br{
+    display: none;
+}
 }
 
